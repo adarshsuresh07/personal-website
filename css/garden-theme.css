@@ -8,11 +8,22 @@
 }
 
 /* All sections - full viewport height */
+/* Using dvh (dynamic viewport height) for mobile URL bar support */
 section {
     min-height: 100vh !important;
+    min-height: 100dvh !important; /* Modern browsers - accounts for URL bar */
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* On mobile with bottom navbar, account for navbar height (~60px) */
+@media (max-width: 767px) {
+    section {
+        min-height: calc(100vh - 60px) !important;
+        min-height: calc(100dvh - 60px) !important;
+        padding-bottom: 60px;
+    }
 }
 
 #home .position-relative {
@@ -21,6 +32,14 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    min-height: 100dvh; /* Modern browsers */
+}
+
+@media (max-width: 767px) {
+    #home .position-relative {
+        min-height: calc(100vh - 60px);
+        min-height: calc(100dvh - 60px);
+    }
 }
 
 /* Custom CSS Variables */
