@@ -1,5 +1,6 @@
 @import url("common.css");
 @import url("animation.css");
+@import url("garden-theme.css");
 
 html {
     scrollbar-width: none !important;
