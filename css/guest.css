@@ -28,6 +28,19 @@ html {
     object-fit: cover;
 }
 
+.img-couple {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+@media (min-width: 576px) {
+    .img-couple {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
 html[data-bs-theme="dark"] .btn-transparent {
     background-color: rgba(var(--bs-dark-rgb), 0.5) !important;
     backdrop-filter: blur(0.5rem);
@@ -113,4 +126,40 @@ svg {
 
 .no-gap-bottom {
     margin-bottom: -0.75rem !important;
+}
+
+/* Gallery carousel styling */
+#gallery .container {
+    max-width: 500px;
+}
+
+#gallery .carousel-inner {
+    height: 450px;
+}
+
+#gallery .carousel-item {
+    height: 450px;
+}
+
+#gallery .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (min-width: 768px) {
+    #gallery .carousel-inner,
+    #gallery .carousel-item {
+        height: 550px;
+    }
+}
+
+/* Alternating section backgrounds - Pastel Green and White */
+.section-white {
+    background-color: #FFFFFF !important;
+}
+
+.section-pastel-green {
+    background-color: #E8F5E9 !important;
 }

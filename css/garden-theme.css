@@ -123,9 +123,9 @@ html[data-bs-theme="light"] .nav-link:hover {
 html[data-bs-theme="light"] .btn-outline-auto {
     --bs-btn-color: var(--sage-deep) !important;
     --bs-btn-border-color: var(--sage-green) !important;
-    --bs-btn-hover-color: white !important;
-    --bs-btn-hover-bg: var(--sage-green) !important;
-    --bs-btn-hover-border-color: var(--sage-green) !important;
+    --bs-btn-hover-color: var(--sage-deep) !important;
+    --bs-btn-hover-bg: white !important;
+    --bs-btn-hover-border-color: var(--sage-deep) !important;
     --bs-btn-active-color: white !important;
     --bs-btn-active-bg: var(--sage-deep) !important;
     border-radius: 25px !important;
